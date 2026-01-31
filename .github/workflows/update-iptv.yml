@@ -20,9 +20,9 @@ jobs:
         with:
           python-version: '3.10'
 
-      # 关键修复：安装脚本依赖的pytz库
-      - name: 安装pytz依赖库
-        run: pip install pytz
+      # 同时安装所有缺失的依赖
+      - name: 安装依赖库
+        run: pip install pytz tqdm
 
       - name: 运行更新脚本生成直播源
         run: python main.py
