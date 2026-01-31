@@ -11,9 +11,3 @@
 [KEYWORDS]
 # 以下是关键字白名单，含有关键字的地址会被加入白名单，换行输入。
 # This is the keyword whitelist. Addresses containing keywords will be added to the whitelist, newline input.
-翡翠台,https://raw.githubusercontent.com/Guovin/iptv-database/master/result.txt
-翡翠台,https://raw.githubusercontent.com/iptv-org/iptv/gh-pages/countries/cn.m3u
-翡翠台,https://raw.githubusercontent.com/iptv-org/iptv/master/streams/cn.m3u
-翡翠台,https://raw.githubusercontent.com/suxuang/myIPTV/main/ipv4.m3u
-翡翠台,https://raw.githubusercontent.com/kimwang1978/collect-tv-txt/main/others_output.txt
-翡翠台,https://raw.githubusercontent.com/vbskycn/iptv/master/tv/iptv4.txt
