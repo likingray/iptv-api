@@ -1,37 +1,32 @@
-# 工作流名称，可自定义，仅用于识别
 name: 每周五6点自动更新IPTV直播源
 
-# 触发规则：定时执行 + 手动执行
 on:
   schedule:
-    # UTC周四22:00 = 北京时间周五6:00
     - cron: "0 22 * * 4"
-  # 允许手动点击运行，方便测试
   workflow_dispatch:
 
-# 执行任务
 jobs:
   update-source:
     runs-on: ubuntu-latest
     steps:
-      # 步骤1：检出仓库代码
       - name: 检出仓库代码
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
           persist-credentials: true
 
-      # 步骤2：设置Python环境（项目仅需官方原生环境，无第三方依赖）
       - name: 设置Python环境
         uses: actions/setup-python@v5
         with:
           python-version: '3.10'
 
-      # 步骤3：直接执行更新脚本（无依赖，跳过安装步骤）
+      # 关键修复：安装脚本依赖的pytz库
+      - name: 安装pytz依赖库
+        run: pip install pytz
+
       - name: 运行更新脚本生成直播源
         run: python main.py
 
-      # 步骤4：提交更新后的文件到仓库
       - name: 提交并推送更新结果
         uses: EndBug/add-and-commit@v9
         with:
