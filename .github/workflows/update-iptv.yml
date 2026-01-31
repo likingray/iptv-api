@@ -1,36 +1,43 @@
-name: 每周五6点自动更新IPTV直播源
+name: IPTV Auto Update at 6:00
 
 on:
   schedule:
-    - cron: "0 22 * * 4"
-  workflow_dispatch:
+    # 每天 UTC 22:00（北京时间 06:00）
+    - cron: '0 22 * * *'
+  workflow_dispatch:  # 允许手动触发
+
+permissions:
+  contents: write
 
 jobs:
-  update-source:
+  update:
     runs-on: ubuntu-latest
     steps:
-      - name: 检出仓库代码
+      - name: Checkout 仓库
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
-          persist-credentials: true
 
-      - name: 设置Python环境
+      - name: 设置 Python 环境
         uses: actions/setup-python@v5
         with:
-          python-version: '3.10'
+          python-version: '3.x'  # 根据项目需求调整版本
 
-      # 同时安装所有缺失的依赖
-      - name: 安装依赖库
-        run: pip install pytz tqdm
+      - name: 安装依赖
+        run: |
+          if [ -f requirements.txt ]; then
+            pip install -r requirements.txt
+          fi
 
-      - name: 运行更新脚本生成直播源
-        run: python main.py
+      - name: 执行更新脚本（命令以项目文档为准）
+        run: |
+          # 示例：项目入口通常是 python main.py 或类似命令
+          python main.py
 
-      - name: 提交并推送更新结果
-        uses: EndBug/add-and-commit@v9
-        with:
-          message: "GitHub Actions 自动更新直播源"
-          add: "."
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # 下面这个步骤只是示例：将结果提交回仓库
+      # 如果你只需要生成文件，不提交回仓库，可以删掉这段
+      - name: 提交变更到仓库
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email 'github-actions[bot]@users.noreply.github.com'
+          git add output/   # 这里假设结果在 output 目录
+          git diff --staged --quiet || git commit -m "auto update: $(date '+%Y-%m-%d %H:%M:%S')"
+          git push
