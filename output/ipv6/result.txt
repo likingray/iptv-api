@@ -1,5 +1,5 @@
 🕘️更新时间,#genre#
-2026-02-02 09:58:34,http://r.jdshipin.com/qClQf$订阅源
+2026-02-02 17:26:42,http://r.jdshipin.com/qClQf$订阅源
 
 🌊港·澳·台,#genre#
 翡翠台,http://r.jdshipin.com/qClQf$订阅源
@@ -247,7 +247,6 @@ Viutv,http://php.jdshipin.com:8880/PLTV/iptv.php?id=viutv$订阅源
 江门综合,https://stream1.freetv.fun/jiang-men-zong-he-9.ctv$订阅源
 江门综合,https://stream1.freetv.fun/jiang-men-zong-he-8.ctv$订阅源
 江门综合,https://stream1.freetv.fun/jiang-men-zong-he-5.ctv$订阅源
-江门侨乡生活,翡翠台
 佛山综合,翡翠台
 佛山综合,https://t.freetv.fun/live/fo-shan-zong-he.m3u8$订阅源
 佛山综合,https://stream1.freetv.fun/fo-shan-zong-he-7.ctv$订阅源
@@ -279,9 +278,6 @@ Viutv,http://php.jdshipin.com:8880/PLTV/iptv.php?id=viutv$订阅源
 汕头经济,https://stream1.freetv.fun/shan-tou-jing-ji-4.ctv$订阅源
 汕头经济,https://stream1.freetv.fun/shan-tou-jing-ji-2.ctv$订阅源
 汕头经济,https://stream1.freetv.fun/shan-tou-jing-ji-5.ctv$订阅源
-汕头文旅,翡翠台
-茂名综合,翡翠台
-茂名公共,翡翠台
 
 📺央视频道,#genre#
 CCTV-1,http://iptv.huuc.edu.cn/hls/cctv1hd.m3u8$订阅源
