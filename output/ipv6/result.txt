@@ -1,5 +1,5 @@
 🕘️更新时间,#genre#
-2026-02-09 05:47:31,http://r.jdshipin.com/qClQf
+2026-02-09 18:15:43,http://r.jdshipin.com/qClQf
 
 🌊港·澳·台,#genre#
 翡翠台,http://r.jdshipin.com/qClQf
@@ -394,6 +394,7 @@ CCTV-16,http://[2409:8087:8:21::18]:6610/otttv.bj.chinamobile.com/PLTV/88888888/
 CCTV-16,http://[2409:8087:1a01:df::4077]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221226100/index.m3u8
 CCTV-16,https://epg.pw/stream/c1beb2abcba5aef09c2f58efc3ca84b76de2c7b9cf60762b0d79772d9e70d454.m3u8
 CCTV-16,https://live.ottiptv.cc/mcp/cctv16.m3u8?userid=5559462299&sign=95ccb2407217fcf1d346723bd7f806031e081bfd6cff0b8d12baa8a151d1369b182e3bebc53e2295e571c25a98e432c3cfbfa0ab723c980869b4bea996c4b1219d08c20fc9d2979fccf18875042e&auth_token=1b99577efa5a3442ca4c7820d6e0b4e8
+CCTV-16,https://live.ottiptv.cc/mcp/cctv16.m3u8?userid=5559462299&sign=1a9f0c6133fac6af44158f4c4558b45d558573bc7b2c7d56d132c2c31badefd32c37b7ecbb569ce4b29ad230be07197a01dab5ac42e108848b38a1de0377a5cde80fc648e9bf3ee8350123ab6951&auth_token=1b99577efa5a3442ca4c7820d6e0b4e8
 CCTV-17,https://migu.188766.xyz/?migutoken=2eb4628a96ddb7a71e60b9805ad5c13e&id=CCTV17&type=yy
 CCTV-17,https://live.ottiptv.cc/mcp/cctv17.m3u8?userid=5559462299&sign=8d3583d5db446550d5f8eeb16826ddc3b1564199c4795ada0105fd7c17844562ed7559d8b077ad21cdc859758e7bb1524ec1bbe1fea7609c9867e51a0fdef13b6efbb178d7947a8f6cfa7fa25635&auth_token=1b99577efa5a3442ca4c7820d6e0b4e8
 CCTV-17,http://[2409:8087:1a01:df::4077]/ottrrs.hl.chinamobile.com/PLTV/88888888/224/3221225765/index.m3u8
