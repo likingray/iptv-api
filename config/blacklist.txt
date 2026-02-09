@@ -2,5 +2,6 @@
 # This is the interface blacklist list, the interface matching the keyword will be blocked, one keyword line
 122.152.202.33
 cdn6.163189.xyz
+mgev.188766.xyz
 /audio/
 bxtv.3a.ink
